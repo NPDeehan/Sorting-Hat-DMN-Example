@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="SortingHatDRD" name="SortingHatDRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.9.0">
+  <decision id="Gryffindor" name="Are you Gryffindor">
+    <decisionTable id="DecisionTable_111i8yx" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="Input_1" label="Help a Friend">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>friend</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1uvvna4" label="Your Wand">
+        <inputExpression id="LiteralExpression_18bke4p" typeRef="string">
+          <text>wand</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1uce6d9">
+          <text>"phoenix feathers","dragon heartstrings","unicorn tail hairs"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_062q1n6" label="Play Quidditch?">
+        <inputExpression id="LiteralExpression_1vng52t" typeRef="boolean">
+          <text>quidditch</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1mxh4kr" label="Horkrux">
+        <inputExpression id="LiteralExpression_1wn2zjl" typeRef="long">
+          <text>horkrux</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0xa47fu" label="Your Potion">
+        <inputExpression id="LiteralExpression_0aolnii" typeRef="string">
+          <text>potion</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0gsxh4q">
+          <text>"Beautification Potion","Polyjuice Potion","Skele-Gro","Veritaserum"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Gryffindor Score" name="GryffindorScore" typeRef="long" />
+      <rule id="DecisionRule_09m77lg">
+        <inputEntry id="UnaryTests_1xhk4h3">
+          <text>"Jump in the Way"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bdz9i4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0upzx5q">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vaa7h1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dmxzg5">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1pjgzwk">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1c4qg5s">
+        <inputEntry id="UnaryTests_1he1kdh">
+          <text>"Watch"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05zba04">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0o707mm">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dtkq3c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_025oax1">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0zz7xht">
+          <text>-20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nq5d9l">
+        <inputEntry id="UnaryTests_12kxkhi">
+          <text>"Jump in the Way"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lfzazn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_177aast">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16efna9">
+          <text>0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0oocual">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ebo276">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tvqm6d">
+        <inputEntry id="UnaryTests_1i0npfx">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04ith0b">
+          <text>"phoenix feathers","unicorn tail hairs"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pd62zr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0geagso">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hajxs5">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1mlzq19">
+          <text>
+20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16vk2de">
+        <inputEntry id="UnaryTests_1xekidt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x2tp9x">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1oeymqy">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vxetwn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15gsque">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nprav0">
+          <text>20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ksszq0">
+        <inputEntry id="UnaryTests_1tz9f83">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pzsmgc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s3od3c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_190j3t7">
+          <text>
+[3.. 10]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03ac17j">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_04r47z7">
+          <text>-40</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0svv6ge">
+        <inputEntry id="UnaryTests_12plao4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jkmrli">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y7yiak">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12izxf9">
+          <text>
+&gt;=11</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xxtg66">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r9y1y2">
+          <text>-100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0uvnk4m">
+        <inputEntry id="UnaryTests_0ib3ujo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s53asn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03dqh8b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_104vkkk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_107bhkw">
+          <text>"Polyjuice Potion","Skele-Gro"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nofcwj">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13220n6">
+        <inputEntry id="UnaryTests_1srbsih">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_034b9bi">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0240ynd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x8nvuv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17aizae">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0948pnc">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Slytherin" name="Are you Slytherin">
+    <decisionTable id="DecisionTable_1yzcu8r" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="InputClause_1ep2a5c" label="Help a Friend">
+        <inputExpression id="LiteralExpression_1xbgzln" typeRef="string">
+          <text>friend</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1q2g01h">
+          <text>"Jump in the Way","Watch","Attach the Animal","Distract the Animal"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_132c05h" label="Your Wand">
+        <inputExpression id="LiteralExpression_03qh7of" typeRef="string">
+          <text>wand</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_02hj9qn">
+          <text>"phoenix feathers","dragon heartstrings","unicorn tail hairs"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0sv23pf" label="Horkrux">
+        <inputExpression id="LiteralExpression_00sfbjy" typeRef="long">
+          <text>horkrux</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12b8fb7" label="Average Price of Milk 1L" biodi:width="231">
+        <inputExpression id="LiteralExpression_0ekww1k" typeRef="double">
+          <text>milk</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0kqwyeu" label="Do you have new robes?">
+        <inputExpression id="LiteralExpression_0ll30v5" typeRef="boolean">
+          <text>robes</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0a9uums" label="Slytherin Score" name="SlytherinScore" typeRef="long" />
+      <rule id="DecisionRule_0eoqb0p">
+        <inputEntry id="UnaryTests_0c25rg7">
+          <text>"Watch","Distract the Animal"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1og7vir">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1f0h5bv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mhzwdq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0packk7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fe005g">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0n40wma">
+        <inputEntry id="UnaryTests_0dmmfj2">
+          <text>"Jump in the Way"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1c72hjw">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y7dxjf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_136734j">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vvlqe0">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1cvam6n">
+          <text>-20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19q756k">
+        <inputEntry id="UnaryTests_12twe7e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19ziamg">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ugcdvp">
+          <text>[0.. 3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1c608w1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eza57y">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09c66pm">
+          <text>-20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hnaolo">
+        <inputEntry id="UnaryTests_0c1nkpj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1exv70w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kak6eo">
+          <text>[4.. 7]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j1kajk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03qxgm8">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uvwrlm">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05r10du">
+        <inputEntry id="UnaryTests_07zylq9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j46pbh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_030mrcs">
+          <text>8</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1drbsq7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16wqv0k">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vr8atf">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19rtjoh">
+        <description>The average price is 0.75</description>
+        <inputEntry id="UnaryTests_1rwj60y">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15r5gav">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1haaaa5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j7lgdd">
+          <text>&gt;3</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rx8aj7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12p7ob6">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xqi73x">
+        <inputEntry id="UnaryTests_08k8oaq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bggydr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lceomy">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03ae61f">
+          <text>[3.. 100]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0foz4lg">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xv9xlu">
+          <text>-10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0x04mau">
+        <inputEntry id="UnaryTests_1henq40">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cebmmd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hjtvoe">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0mvhbda">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09s43w0">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0iz88gh">
+          <text>-100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1q8mr8y">
+        <inputEntry id="UnaryTests_1wec05r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0afdtic">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q5mj2f">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ed638d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0nrujyx">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yk8sue">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_01xw703">
+        <inputEntry id="UnaryTests_0cot02d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lvwa8q">
+          <text>"dragon heartstrings"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xark2e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00yr45j">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03ppfmi">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bhv13c">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11b5dwd">
+        <inputEntry id="UnaryTests_0b8nurx">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18jhg2h">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e7pfd7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13d9mr6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kv5ql1">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1s9nrpt">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Hufflepuff" name="Are you Hufflepuff">
+    <decisionTable id="DecisionTable_1x2wi74" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="InputClause_0bgyhs5" label="Help a Friend">
+        <inputExpression id="LiteralExpression_066is6b" typeRef="string">
+          <text>friend</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1m678py">
+          <text>"Jump in the Way","Watch","Attach the Animal","Distract the Animal"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_1n2atx9" label="Horkrux">
+        <inputExpression id="LiteralExpression_02257x5" typeRef="integer">
+          <text>horkrux</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1lc69wg" label="Prime between 270 and 300">
+        <inputExpression id="LiteralExpression_1gi4saz" typeRef="integer">
+          <text>prime</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1y1eu8v" label="Your Wand">
+        <inputExpression id="LiteralExpression_1w1616j" typeRef="string">
+          <text>wand</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1huezdw">
+          <text>"phoenix feathers","dragon heartstrings","unicorn tail hairs"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_1wcuw65" label="Bend the rules">
+        <inputExpression id="LiteralExpression_0pdhbyo" typeRef="boolean">
+          <text>rules</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_16pze3n" label="Hufflepuff Score" name="HufflepuffScore" typeRef="long" />
+      <rule id="DecisionRule_1kg04gn">
+        <inputEntry id="UnaryTests_167ujhy">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rh2ti3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kuo72i">
+          <text>not([277,281,283,293])</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jli8bj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1was5ao">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uub30d">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03jdml8">
+        <inputEntry id="UnaryTests_1a64mn4">
+          <text>"Jump in the Way","Distract the Animal"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wsjjgf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1r5opub">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00gks8e">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lokt42">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_091k6nm">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0z1d3dn">
+        <inputEntry id="UnaryTests_03a27qi">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01r75k3">
+          <text>[0.. 1]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yvm2b9">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mgg837">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1457vf2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16dg79f">
+          <text>10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0w7lae0">
+        <inputEntry id="UnaryTests_0j4u9h3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_146hdse">
+          <text>&gt;1</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xtyejs">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aqtyi7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wxooxk">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w5p8qf">
+          <text>-50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04mgwmv">
+        <inputEntry id="UnaryTests_0gozfcf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1risr2i">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09h4z3g">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0h0sj40">
+          <text>"unicorn tail hairs"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f01zwq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07gi5ay">
+          <text>75</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0obqmzn">
+        <inputEntry id="UnaryTests_0gu9sdu">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18njuhc">
+          <text>0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_195l8qq">
+          <text>not([277,281,283,293])</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0znrdkt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pa4lbh">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mypc5v">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1e45vgf">
+        <inputEntry id="UnaryTests_13y3psb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gxiaqa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16v9i87">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06lezt4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_030a60d">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h5kjxv">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15hk460">
+        <inputEntry id="UnaryTests_1x2d2ro">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_167ewdj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_011jmgv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m485nj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i240lo">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10v02u0">
+          <text>-50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vubhkl">
+        <inputEntry id="UnaryTests_0j2708r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ayoqwi">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_073azta">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bxevfs">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rks7yf">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lbdjga">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="Ravenclaw" name="Are you Ravenclaw">
+    <decisionTable id="DecisionTable_12xchbz" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="InputClause_162v1r5" label="Help a Friend">
+        <inputExpression id="LiteralExpression_14l79g4" typeRef="string">
+          <text>friend</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1h0hr95">
+          <text>"Jump in the Way","Watch","Attach the Animal","Distract the Animal"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0qskrje" label="Horkrux">
+        <inputExpression id="LiteralExpression_1qbskx4" typeRef="integer">
+          <text>horkrux</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1mjrlvk" label="Average Price of Milk 1L">
+        <inputExpression id="LiteralExpression_1k2e7k2" typeRef="double">
+          <text>milk</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0tdym2x" label="Potion">
+        <inputExpression id="LiteralExpression_0608c13" typeRef="string">
+          <text>potion</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0b4ygjn">
+          <text>"Beautification Potion","Skele-Gro","Veritaserum","Polyjuice Potion"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_04khge6" label="Prime between 270 and 300">
+        <inputExpression id="LiteralExpression_1rbriel" typeRef="integer">
+          <text>prime</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_1x3w016" label="Ravenclaw Score" name="RavenclawScore" typeRef="long" />
+      <rule id="DecisionRule_1cjdzug">
+        <inputEntry id="UnaryTests_0aypdxo">
+          <text>"Attach the Animal","Distract the Animal"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lr07z4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pyckri">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ay4ba2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12veo8h">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ttm85i">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xzvm97">
+        <inputEntry id="UnaryTests_09nuopk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1poa2bp">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1x6rubx">
+          <text>&lt;1.0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_189z2jm">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gojaka">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1u29m3d">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1iigtw4">
+        <inputEntry id="UnaryTests_17ht2ci">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vytiz5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a1rf1w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xgk5la">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vv88y0">
+          <text>[277,281,283,293]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rif2o9">
+          <text>100</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qqlhga">
+        <inputEntry id="UnaryTests_0atf593">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13zir24">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0pdjwgc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0erh6eo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y852g7">
+          <text>&lt;270, &gt;300</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0k2penx">
+          <text>-150</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1f59679">
+        <inputEntry id="UnaryTests_12z5u95">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_074z4gp">
+          <text>0</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z6m3xt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0y9lw3j">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17mm0l5">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0uhc80p">
+          <text>10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1i92j6e">
+        <inputEntry id="UnaryTests_14abgv1">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1epj0v8">
+          <text>[1.. 5]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pp7npw">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ncxwql">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00r4sng">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_176l76a">
+          <text>5</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vw1cod">
+        <inputEntry id="UnaryTests_19xvgll">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ebn08e">
+          <text>&gt;5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bnrxom">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i1bmjz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18d39ih">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n1x94z">
+          <text>-50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nh8brw">
+        <inputEntry id="UnaryTests_03f266w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_020m8j4">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1g50qrz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uztt0g">
+          <text>"Polyjuice Potion"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bdr4w7">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05jl64h">
+          <text>50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sec9m7">
+        <inputEntry id="UnaryTests_1izx9cr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vm0tvt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17fsteu">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0htmab3">
+          <text>"Beautification Potion","Skele-Gro"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1o6832u">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ws0gpx">
+          <text>-50</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tkpaya">
+        <inputEntry id="UnaryTests_0k5xyhs">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rl71uk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u68h0q">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b68ydk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gwvwfa">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tcizcb">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <decision id="DecideOnHouse" name="Decide on house">
+    <informationRequirement id="InformationRequirement_1c2bx4u">
+      <requiredDecision href="#Gryffindor" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0ip4nh1">
+      <requiredDecision href="#Slytherin" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0yc0hze">
+      <requiredDecision href="#Hufflepuff" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0kyu83k">
+      <requiredDecision href="#Ravenclaw" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_0u9dm86" hitPolicy="FIRST">
+      <input id="InputClause_15secax" label="Gryffindor Score">
+        <inputExpression id="LiteralExpression_0as5y2c" typeRef="long">
+          <text>GryffindorScore</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0jf6i6c" label="Slytherin Score">
+        <inputExpression id="LiteralExpression_1yi3lqy" typeRef="long">
+          <text>SlytherinScore</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0k5vujs" label="Ravenclaw Score">
+        <inputExpression id="LiteralExpression_1tmc108" typeRef="integer">
+          <text>RavenclawScore</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_06emcxg" label="Hufflepuff Score">
+        <inputExpression id="LiteralExpression_1ylgyt1" typeRef="long">
+          <text>HufflepuffScore</text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_1rafkhe" label="Your House" name="house" typeRef="string">
+        <outputValues id="UnaryTests_1dvesv2">
+          <text>"Gryffindor","Slytherin","Hufflepuff","Ravenclaw"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_15hkgw4">
+        <inputEntry id="UnaryTests_05mqwz0">
+          <text>&gt;99</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01refan">
+          <text>&lt; GryffindorScore </text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15lwdmh">
+          <text>&lt; GryffindorScore</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_015j1oy">
+          <text>&lt; GryffindorScore</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_057b6pi">
+          <text>"Gryffindor"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16qjl5f">
+        <inputEntry id="UnaryTests_0ot1lf7">
+          <text>&lt; SlytherinScore</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fse6ky">
+          <text>&gt;99</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0gq3h7y">
+          <text>&lt; SlytherinScore</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0bes5q9">
+          <text>&lt; SlytherinScore</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h5f7nh">
+          <text>"Slytherin"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qfcpcb">
+        <inputEntry id="UnaryTests_1dz78r8">
+          <text>&lt; RavenclawScore</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_169fysx">
+          <text>&lt; RavenclawScore</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0owtuk8">
+          <text>&gt;99</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19a15eq">
+          <text>&lt; RavenclawScore</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_087q3kp">
+          <text>"Ravenclaw"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pa6suj">
+        <inputEntry id="UnaryTests_1ngr8o0">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14hn49n">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b8667u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ocjwq1">
+          <text>&gt;25</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14seknk">
+          <text>"Hufflepuff"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0aqog97">
+        <inputEntry id="UnaryTests_0ruh26u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hxsatf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dh8wbt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_07fynpp">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0r2ao8b">
+          <text>houseChoice</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Gryffindor">
+        <dc:Bounds height="80" width="180" x="160" y="410" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_07flykd" dmnElementRef="Slytherin">
+        <dc:Bounds height="80" width="180" x="400" y="410" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_19qkrmk" dmnElementRef="Hufflepuff">
+        <dc:Bounds height="80" width="180" x="650" y="410" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_0dr2yto" dmnElementRef="Ravenclaw">
+        <dc:Bounds height="80" width="180" x="900" y="410" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_06ub5re" dmnElementRef="InformationRequirement_1c2bx4u">
+        <di:waypoint x="250" y="410" />
+        <di:waypoint x="586" y="180" />
+        <di:waypoint x="586" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_1v5h6ss" dmnElementRef="InformationRequirement_0ip4nh1">
+        <di:waypoint x="490" y="410" />
+        <di:waypoint x="622" y="180" />
+        <di:waypoint x="622" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_1ebhqck" dmnElementRef="InformationRequirement_0yc0hze">
+        <di:waypoint x="740" y="410" />
+        <di:waypoint x="658" y="180" />
+        <di:waypoint x="658" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="DMNEdge_0kqskqz" dmnElementRef="InformationRequirement_0kyu83k">
+        <di:waypoint x="990" y="410" />
+        <di:waypoint x="694" y="180" />
+        <di:waypoint x="694" y="160" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_111fows" dmnElementRef="DecideOnHouse">
+        <dc:Bounds height="80" width="180" x="550" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

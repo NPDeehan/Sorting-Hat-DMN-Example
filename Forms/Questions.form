@@ -1,0 +1,97 @@
+{
+  "type": "default",
+  "components": [
+    {
+      "key": "houseChoice",
+      "label": "Which house do you think you belong in?",
+      "type": "textfield",
+      "validate": {
+        "pattern": "Gryffindor|Slytherin|Hufflepuff|Ravenclaw"
+      }
+    },
+    {
+      "key": "friend",
+      "label": "Your friend was being attacked by an animal!",
+      "type": "textfield",
+      "description": "Jump in the Way or Watch or Attach the Animal or Distract the Animal",
+      "validate": {
+        "required": true,
+        "pattern": "Jump in the Way|Watch|Attach the Animal|Distract the Animal"
+      }
+    },
+    {
+      "key": "wand",
+      "label": "What would be in your wand?",
+      "type": "textfield",
+      "validate": {
+        "pattern": "phoenix feathers|dragon heartstrings|unicorn tail hairs",
+        "required": true
+      },
+      "description": " phoenix feathers or dragon heartstrings or unicorn tail hairs"
+    },
+    {
+      "key": "quidditch",
+      "label": "You would really love to play Quidditch",
+      "type": "textfield",
+      "description": "true or false",
+      "validate": {
+        "required": true,
+        "pattern": "true|false"
+      }
+    },
+    {
+      "key": "rules",
+      "label": "I would you bend the rules if the rules weren't fair",
+      "type": "textfield",
+      "validate": {
+        "required": true,
+        "pattern": "true|false"
+      },
+      "description": "true or false"
+    },
+    {
+      "key": "horkrux",
+      "label": "How may horkrux's would you make for yourself?",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "key": "potion",
+      "label": "What potion would you bring with you on an adventure",
+      "type": "textfield",
+      "validate": {
+        "pattern": "Beautification Potion|Skele-Gro|Veritaserum|Polyjuice Potion",
+        "required": true
+      },
+      "description": "Beautification Potion or Skele-Gro or Veritaserum or Polyjuice Potion"
+    },
+    {
+      "key": "milk",
+      "label": "What is the average price of 1L of milk in Germany",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "key": "robes",
+      "label": "You would expect to start at hogwarts with brand new robes.",
+      "type": "textfield",
+      "description": "true or false",
+      "validate": {
+        "required": true,
+        "pattern": "true|false"
+      }
+    },
+    {
+      "key": "prime",
+      "label": "Name a prime number between 270 and 300",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      }
+    }
+  ]
+}
