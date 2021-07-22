@@ -7,27 +7,27 @@
       "type": "textfield",
       "validate": {
         "pattern": "Gryffindor|Slytherin|Hufflepuff|Ravenclaw"
-      }
+      },
+      "description": "Gryffindor, Slytherin, Hufflepuff or Ravenclaw"
     },
     {
       "key": "friend",
       "label": "Your friend was being attacked by an animal!",
       "type": "textfield",
-      "description": "Jump in the Way or Watch or Attach the Animal or Distract the Animal",
+      "description": "Jump in the Way, Watch,  Attach the Animal or Distract the Animal",
       "validate": {
         "required": true,
         "pattern": "Jump in the Way|Watch|Attach the Animal|Distract the Animal"
       }
     },
     {
-      "key": "wand",
-      "label": "What would be in your wand?",
+      "key": "milk",
+      "label": "What is the average price of 1L of milk in Germany",
       "type": "textfield",
       "validate": {
-        "pattern": "phoenix feathers|dragon heartstrings|unicorn tail hairs",
-        "required": true
-      },
-      "description": " phoenix feathers or dragon heartstrings or unicorn tail hairs"
+        "required": true,
+        "pattern": "[0-9]+(\\.[0-9][0-9]?)?"
+      }
     },
     {
       "key": "quidditch",
@@ -38,6 +38,16 @@
         "required": true,
         "pattern": "true|false"
       }
+    },
+    {
+      "key": "wand",
+      "label": "What would be in your wand?",
+      "type": "textfield",
+      "validate": {
+        "pattern": "phoenix feathers|dragon heartstrings|unicorn tail hairs",
+        "required": true
+      },
+      "description": "phoenix feathers, dragon heartstrings or unicorn tail hairs"
     },
     {
       "key": "rules",
@@ -54,7 +64,8 @@
       "label": "How may horkrux's would you make for yourself?",
       "type": "textfield",
       "validate": {
-        "required": true
+        "required": true,
+        "pattern": "\\b(?<!\\.)\\d+(?!\\.)\\b"
       }
     },
     {
@@ -66,14 +77,6 @@
         "required": true
       },
       "description": "Beautification Potion or Skele-Gro or Veritaserum or Polyjuice Potion"
-    },
-    {
-      "key": "milk",
-      "label": "What is the average price of 1L of milk in Germany",
-      "type": "textfield",
-      "validate": {
-        "required": true
-      }
     },
     {
       "key": "robes",
@@ -90,7 +93,8 @@
       "label": "Name a prime number between 270 and 300",
       "type": "textfield",
       "validate": {
-        "required": true
+        "required": true,
+        "pattern": "\\b(?<!\\.)\\d+(?!\\.)\\b"
       }
     }
   ]
