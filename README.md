@@ -1,5 +1,5 @@
 # DMN Sorting Hat
-This is an example of how DMN could have been used in the harry Potter universe to replace the sorting hat
+This is an example of how DMN could have been used in the Harry Potter universe to replace the Sorting Hat
 
 ## What You will Need
 * [Java JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) so that you can run Camunda Platform Run
